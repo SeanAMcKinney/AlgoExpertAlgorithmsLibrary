@@ -24,7 +24,6 @@ namespace AlgoExpertAlgorithmsLibrary
                 currentChangeCreated += coin;
             }
 
-            Console.WriteLine(currentChangeCreated + 1);
             return currentChangeCreated + 1;
         }
     }
