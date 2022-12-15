@@ -9,6 +9,7 @@ namespace AlgoExpertAlgorithmsLibrary
         // integer and do not have to be unique.
         // Parameter Example: new int[] { 1, 4, 2, 7 }
 
+
         public static int NonConstructibleChange(int[] coins)
         {
             Array.Sort(coins);
@@ -18,12 +19,14 @@ namespace AlgoExpertAlgorithmsLibrary
             {
                 if (coin > currentChangeCreated + 1)
                 {
+                    Console.WriteLine($"\nThe first amount of change you can't create is: {currentChangeCreated + 1}\n");
                     return currentChangeCreated + 1;
                 }
 
                 currentChangeCreated += coin;
             }
 
+            Console.WriteLine($"\nThe first amount of change you can't create is: {currentChangeCreated + 1}\n");
             return currentChangeCreated + 1;
         }
     }
