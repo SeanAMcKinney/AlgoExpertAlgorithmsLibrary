@@ -18,7 +18,7 @@
                 return BinarySearchHelper(array, target, 0, array.Length - 1);
             }
 
-            public static int BinarySearchHelper(int[] array, int target, int leftPointer, int rightPointer)
+            private static int BinarySearchHelper(int[] array, int target, int leftPointer, int rightPointer)
             {
                 while (leftPointer <= rightPointer)
                 {
