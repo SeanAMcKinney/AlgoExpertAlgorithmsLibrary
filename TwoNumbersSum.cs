@@ -3,25 +3,42 @@
     public class TwoNumberSum
     {
         // Function: takes a non-empty array of distinct integers and an integer representing a target sum.  If any two numbers
-        // in the input array sum up to the target sum, the function should return them in an aray, in any order.
-        // If no two numbers sum up to the target sum, the function should return an empty array. The target sum must be obtained
-        // by summing two different integers in the array.
+        // in the input array sum up to the target sum, the function should return them and print out the equation.
+        // If no two numbers sum up to the target sum, the function should return a message telling you that.
+        // The target sum must be obtained by summing two different integers in the array.
+        // This function will list ALL possible answers from combinations of two integers.
 
-        public static int[] FindTwoNumberSum(int[] array, int targetSum)
+        public static void FindTwoNumberSum(int[] array, int targetSum)
         {
+            int talley = 0;
             for (int i = 0; i < array.Length - 1; i++)
             {
-                int firstNum = array[i];
-                for (int j = i + 1; j < array.Length; j++)
+                if (i < array.Length - 1)
                 {
-                    int secondNum = array[j];
-                    if (firstNum + secondNum == targetSum)
+                    int firstNum = array[i];
+                    for (int j = i + 1; j < array.Length; j++)
                     {
-                        return new int[] { firstNum, secondNum };
+                        int secondNum = array[j];
+                        {
+                            if (firstNum + secondNum == targetSum)
+                            {
+                                System.Console.WriteLine($"{firstNum} + {secondNum} = {targetSum}\n");
+                                talley++;
+                                continue;
+                            }
+                            else if (firstNum + secondNum != targetSum)
+                            {
+                                continue;
+                            }
+                        }
                     }
                 }
+                if (talley == 0)
+                {
+                    System.Console.WriteLine($"No two integers in your array sum up to {targetSum}.\n");
+                    return;
+                }
             }
-            return new int[0];
         }
     }
 }
