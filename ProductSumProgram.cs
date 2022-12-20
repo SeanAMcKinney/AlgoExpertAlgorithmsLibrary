@@ -5,7 +5,7 @@ namespace AlgoExpertAlgorithmsLibrary
     public class ProductSumProgram
         {
             // takes a "special" array and returns it's product sum. 
-            /* smaple: { "array": [5, 2, [7, -1], 3, [6, [-13, 8], 4]] }  output: 12 */
+            /* sample: { "array": [5, 2, [7, -1], 3, [6, [-13, 8], 4]] }  output: 12 */
             // Calculated as: 5 + 2 + 2 * (7 - 1) + 3 + 2 * (6 + 3 * (-13 + 8) + 4)
 
             public static int ProductSum(List<object> array)

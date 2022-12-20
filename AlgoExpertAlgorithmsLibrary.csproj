@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinarySearchProgram.cs" />
-    <Compile Include="BranchSumsProgram.cs" />
+    <Compile Include="BranchSumsAlgorithem.cs" />
     <Compile Include="NodeDepthsProgram.cs" />
     <Compile Include="NonConstructibleChangeAlgorithem.cs" />
     <Compile Include="ProductSumProgram.cs" />

@@ -2,7 +2,7 @@
 
 namespace AlgoExpertAlgorithmsLibrary
 {
-    public class BranchSumsProgram
+    public class BranchSumsAlgorithem
         {
             //  Function: takes in a binary tree and returns a list of its branch sums ordered from leftmost
             //  branch sum to rightmost branch sum. 
