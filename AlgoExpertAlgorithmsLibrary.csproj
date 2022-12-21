@@ -46,9 +46,9 @@
     <Compile Include="NodeDepthsProgram.cs" />
     <Compile Include="NonConstructibleChangeAlgorithem.cs" />
     <Compile Include="ProductSumProgram.cs" />
-    <Compile Include="SortedSquaredArrayProgram.cs" />
+    <Compile Include="SortedSquaredArrayAlgorithem.cs" />
     <Compile Include="TournamentWinnerProgram.cs" />
-    <Compile Include="TwoNumbersSum.cs" />
+    <Compile Include="TwoNumbersSumAlgorithem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidateSubsequence.cs" />
   </ItemGroup>
