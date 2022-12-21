@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgoExpertAlgorithmsLibrary
 {
-    public class ValidateSubsequence
+    public class ValidateSubsequenceAlgorithem
     {
         //  Function: Given two non-empty arrays of integers, write a function that determines whether the second array is a
         //  subsequence of the first one. 
@@ -25,6 +25,15 @@ namespace AlgoExpertAlgorithmsLibrary
                 {
                     seqPointer++;
                 }
+            }
+
+            if (seqPointer == sequence.Count)
+            {
+                Console.WriteLine($"True:  Your sequence is a subsequence of the initial array./n");
+            }
+            else
+            {
+                Console.WriteLine($"False:  Your sequence is not a subsequence of the initial array.\n");
             }
             return seqPointer == sequence.Count;
         }
