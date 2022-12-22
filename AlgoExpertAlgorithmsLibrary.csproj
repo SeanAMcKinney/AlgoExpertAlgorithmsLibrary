@@ -42,15 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinarySearchProgram.cs" />
-    <Compile Include="BranchSumsAlgorithem.cs" />
+    <Compile Include="BranchSumsAlgorithm.cs" />
     <Compile Include="NodeDepthsProgram.cs" />
-    <Compile Include="NonConstructibleChangeAlgorithem.cs" />
+    <Compile Include="NonConstructibleChangeAlgorithm.cs" />
     <Compile Include="ProductSumProgram.cs" />
-    <Compile Include="SortedSquaredArrayAlgorithem.cs" />
-    <Compile Include="TournamentWinnerProgram.cs" />
-    <Compile Include="TwoNumbersSumAlgorithem.cs" />
+    <Compile Include="SortedSquaredArrayAlgorithm.cs" />
+    <Compile Include="TournamentWinnerAlgorithm.cs" />
+    <Compile Include="TwoNumbersSumAlgorithm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValidateSubsequenceAlgorithem.cs" />
+    <Compile Include="ValidateSubsequenceAlgorithm.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

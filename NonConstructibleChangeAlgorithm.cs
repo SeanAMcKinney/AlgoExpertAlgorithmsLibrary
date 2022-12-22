@@ -2,7 +2,7 @@
 
 namespace AlgoExpertAlgorithmsLibrary
 {
-    public class NonConstructibleChangeAlgorithem
+    public class NonConstructibleChangeAlgorithm
     {
         // Function: given an array of positive integers representing the values of coins in your possession,
         // the function will retunr the minimum sum of money that you CANNOT create. Coins must be a positive

@@ -4,7 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace AlgoExpertAlgorithmsLibrary
 {
-    public class SortedSquaredArrayAlgorithem
+    public class SortedSquaredArrayAlgorithm
     {
         // Function: takes in a non-empty array of integers that are sorted in ascending order and returns a new array of
         // the same length with the squares of the original integers also sorted in ascending order.
