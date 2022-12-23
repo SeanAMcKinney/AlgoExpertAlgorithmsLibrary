@@ -45,7 +45,7 @@
     <Compile Include="BranchSumsAlgorithm.cs" />
     <Compile Include="NodeDepthsProgram.cs" />
     <Compile Include="NonConstructibleChangeAlgorithm.cs" />
-    <Compile Include="ProductSumProgram.cs" />
+    <Compile Include="ProductSumAlgorithm.cs" />
     <Compile Include="SortedSquaredArrayAlgorithm.cs" />
     <Compile Include="TournamentWinnerAlgorithm.cs" />
     <Compile Include="TwoNumbersSumAlgorithm.cs" />
