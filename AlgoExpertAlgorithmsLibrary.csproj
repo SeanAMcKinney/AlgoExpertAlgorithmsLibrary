@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinarySearchProgram.cs" />
+    <Compile Include="BinarySearchAlgorithm.cs" />
     <Compile Include="BranchSumsAlgorithm.cs" />
     <Compile Include="NodeDepthsProgram.cs" />
     <Compile Include="NonConstructibleChangeAlgorithm.cs" />
