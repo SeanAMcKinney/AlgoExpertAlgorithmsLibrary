@@ -10,15 +10,15 @@ namespace AlgoExpertAlgorithmsLibrary
 
             public class BinaryTree
             {
-                public int value;
-                public BinaryTree left;
-                public BinaryTree right;
+                public int Value;
+                public BinaryTree Left;
+                public BinaryTree Right;
 
                 public BinaryTree(int value)
                 {
-                    this.value = value;
-                    this.left = null;
-                    this.right = null;
+                    Value = value;
+                    Left = null;
+                    Right = null;
                 }
             }
 
@@ -33,15 +33,15 @@ namespace AlgoExpertAlgorithmsLibrary
             {
                 if (node == null) return;
 
-                int newRunningSum = runningSum + node.value;
-                if (node.left == null && node.right == null)
+                int newRunningSum = runningSum + node.Value;
+                if (node.Left == null && node.Right == null)
                 {
                     sums.Add(newRunningSum);
                     return;
                 }
 
-                calculateBranchSums(node.left, newRunningSum, sums);
-                calculateBranchSums(node.right, newRunningSum, sums);
+                calculateBranchSums(node.Left, newRunningSum, sums);
+                calculateBranchSums(node.Right, newRunningSum, sums);
             }
         }
 }

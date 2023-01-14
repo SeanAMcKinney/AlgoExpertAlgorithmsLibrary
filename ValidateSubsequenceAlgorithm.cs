@@ -3,10 +3,9 @@ using System.Collections.Generic;
 
 namespace AlgoExpertAlgorithmsLibrary
 {
-
     public interface IIsValidSubSequence
     {
-        //bool IsValidSubSequence(List<int> array, List<int> sequence);
+        bool IsValidSubSequence(List<int> array, List<int> sequence);
     }
 
     public class ValidateSubsequenceAlgorithm //: IIsValidSubSequence
@@ -15,7 +14,7 @@ namespace AlgoExpertAlgorithmsLibrary
         //  subsequence of the first one. 
 
         public static bool IsValidSubSequence(List<int> array, List<int> sequence)
-        //public bool IsValidSubSequence(List<int> array, List<int> sequence)
+       //public bool IsValidSubSequence(List<int> array, List<int> sequence)
         {
             // Write your code here.
             int seqPointer = 0;
