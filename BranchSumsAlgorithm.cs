@@ -3,45 +3,47 @@
 namespace AlgoExpertAlgorithmsLibrary
 {
     public class BranchSumsAlgorithm
+    {
+        //  Function: takes in a binary tree and returns a list of its branch sums ordered from leftmost
+        //  branch sum to rightmost branch sum. 
+        //  
+
+        public class BinaryTree
         {
-            //  Function: takes in a binary tree and returns a list of its branch sums ordered from leftmost
-            //  branch sum to rightmost branch sum. 
-            //  
+            public int Value;
+            public BinaryTree Left;
+            public BinaryTree Right;
 
-            public class BinaryTree
+            public BinaryTree(int value)
             {
-                public int Value;
-                public BinaryTree Left;
-                public BinaryTree Right;
-
-                public BinaryTree(int value)
-                {
-                    Value = value;
-                    Left = null;
-                    Right = null;
-                }
+                Value = value;
+                Left = null;
+                Right = null;
             }
+        }
 
-            public static List<int> BranchSums(BinaryTree root)
+        public static List<int> BranchSums(BinaryTree root)
+        {
+            List<int> sums = new List<int>();
+            CalculateBranchSums(root, 0, sums);
+            return sums;
+        }
+
+        public static List<int> CalculateBranchSums(BinaryTree node, int runningSum, List<int> sums)
+        {
+            if (node == null) return sums;
+
+            int newRunningSum = runningSum + node.Value;
+            if (node.Left == null && node.Right == null)
             {
-                List<int> sums = new List<int>();
-                calculateBranchSums(root, 0, sums);
+                sums.Add(newRunningSum);
+                System.Console.WriteLine(sums);
                 return sums;
             }
 
-            public static void calculateBranchSums(BinaryTree node, int runningSum, List<int> sums)
-            {
-                if (node == null) return;
-
-                int newRunningSum = runningSum + node.Value;
-                if (node.Left == null && node.Right == null)
-                {
-                    sums.Add(newRunningSum);
-                    return;
-                }
-
-                calculateBranchSums(node.Left, newRunningSum, sums);
-                calculateBranchSums(node.Right, newRunningSum, sums);
-            }
+            CalculateBranchSums(node.Left, newRunningSum, sums);
+            CalculateBranchSums(node.Right, newRunningSum, sums);
+            return sums;
         }
+    }
 }
